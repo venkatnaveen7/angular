@@ -10,7 +10,7 @@ export class HttpService {
 
 
   getList(){
-    this._httpClient.get('');
+    return this._httpClient.get('https://jsonplaceholder.typicode.com/todos');
   }
 
 }

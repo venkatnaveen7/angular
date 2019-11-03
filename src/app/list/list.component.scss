@@ -1,0 +1,30 @@
+
+ul{
+    list-style-type: none;
+    display: flex;
+    //margin: 0;
+    //padding: 0;
+    flex-wrap: wrap;
+    li{
+        background: rgb(238, 238, 238);
+       padding: 1em;
+        margin-right: 10px;
+        margin-bottom: 1em;
+        width: 20%;
+        //height: 230px;
+        flex-direction: column;
+        display: flex; 
+
+        p{
+            margin: 0;
+            text-transform: uppercase;
+            
+        }
+        span{
+            font-weight: bold;
+        }
+        .template{
+            font-weight: bold;
+        }
+    }
+}

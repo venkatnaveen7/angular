@@ -1,1 +1,20 @@
-<p>list works!</p>
+<h3>Listing Items</h3>
+
+<ul *ngIf="listData">
+    <li *ngFor="let object of listData ">
+
+        <p>Title <span>{{object.title}}</span></p>
+        <p>User ID <span>{{object.userId}}</span></p>
+        <p>Row ID <span>{{object.id}}</span></p>
+        <p>Is Completed ? 
+            <ng-template class ="template" [ngIf]="object.completed" [ngIfElse]="No">
+              Yes  
+            </ng-template>
+            <ng-template #No class ="template" >
+                No
+            </ng-template>
+
+        </p>
+
+    </li>
+</ul>

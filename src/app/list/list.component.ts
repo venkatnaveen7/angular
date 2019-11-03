@@ -8,10 +8,14 @@ import {HttpService} from '../http.service';
 })
 export class ListComponent implements OnInit {
 
+  listData:any=[];
+
   constructor(private _http:HttpService) { }
 
   ngOnInit() {
-    this._http.getList();
+    this._http.getList().subscribe(data=>{
+    this.listData=data;
+    });
   }
 
 }
