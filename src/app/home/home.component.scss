@@ -8,5 +8,17 @@ span{
 
 .play-container{
     border: 1px solid;
-    padding: 2em;
+    padding: .5em;
+    margin: 35px;
+    margin-right: 120P;
+}
+.activeClass{
+    background-color: yellow;
+    border: 1px solid;
+    padding: 1.5em;
+}
+.deactiveClass{
+    background-color: grey;
+    border: 1px;
+    padding: .5em;
 }

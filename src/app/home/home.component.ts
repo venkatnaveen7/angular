@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
  
   clickCounter: number =0;
+  name:string="Type Here";
   constructor() { }
 
   ngOnInit() {
@@ -17,4 +18,16 @@ export class HomeComponent implements OnInit {
   counterClick(){
     this.clickCounter+=1;
   }
+
+  negativeClick(){
+    this.clickCounter-=1;
+  }
+
+  setCssClasses(counter){
+    return {
+      activeClass:counter>2,
+      deactiveClass:counter<=2
+    }
+  }
+
 }

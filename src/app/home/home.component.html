@@ -1,5 +1,23 @@
-<h1>Welcome Home !</h1>
+<h4>Welcome Home !</h4>
 
 <div class="play-container">
-    <p>You Clicked <span (click)="counterClick()">THIS </span> {{clickCounter}} Times </p>
+    <p>You Clicked <span (click)="counterClick()">THIS </span> {{clickCounter}} Times . To Decrease the counterClick
+        <span (click)="negativeClick()">Reduce </span>
+    </p>
+    
+</div>
+
+<div class="play-container">
+    <input type="text" [(ngModel)]="name">
+    <br>
+    You Typed <strong>{{name}}</strong>
+</div>
+
+<div class="play-container" [ngClass]='setCssClasses(clickCounter)'>
+    <ng-template [ngIf]='clickCounter>2' [ngIfElse]='none'>
+        Count :    {{clickCounter}} >2 
+    </ng-template>
+    <ng-template #none>
+        Count is less than 2.Increase It
+    </ng-template>
 </div>
