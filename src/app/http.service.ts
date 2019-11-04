@@ -12,5 +12,8 @@ export class HttpService {
   getList(){
     return this._httpClient.get('https://jsonplaceholder.typicode.com/todos');
   }
+  getBooksList(){
+    return this._httpClient.get('https://fakerestapi.azurewebsites.net/api/Books');
+  }
 
 }

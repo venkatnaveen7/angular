@@ -1,0 +1,8 @@
+<h4>List of Books!</h4>
+<p>Calling <a href="https://fakerestapi.azurewebsites.net/api/Books">Books API</a></p>
+<ul *ngIf="booksList">
+    <li *ngFor="let book of booksList">
+        <p>Name : {{book.Title}}</p>
+        <p>PageCount : {{book.PageCount}}</p>
+</li>
+</ul>

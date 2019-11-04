@@ -1,0 +1,15 @@
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    li{
+        border: 1px solid #712fff  ;
+        padding: 1em;
+        margin: 1em;
+        height: 120px;
+        width: 175px;
+        background:#f0f5f5;
+        }
+}
